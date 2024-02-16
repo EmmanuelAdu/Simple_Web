@@ -1,0 +1,264 @@
+@import url('./fontcheck.css');
+@import url('./feelcheck.css');
+@import url('./utilitiescheck.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+/** Header to stay on top */
+header {
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+    top: 0;
+    z-index: 99;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: block;
+    color: #4A4D50;
+}
+
+/** style for main content */
+/**
+main section div {
+    display: flex;
+}
+
+main section div ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section div ul li {
+    list-style-type: none;
+}*/
+
+#sec .hero_content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 40px;
+}
+
+#sec .hero_content-wrapper>div:nth-child(1) {
+    display: grid;
+    place-content: center;
+    padding: 5rem 0;
+    min-width: 250px;
+}
+
+.socials {
+    display: inline-flex;
+    background: #fff;
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 1.5rem;
+    box-shadow: 0 3.48px 13.052px #0000000d;
+    margin: 5px;
+}
+
+.socials p {
+    flex-shrink: 0;
+}
+
+.socials ul {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 4px;
+}
+
+.socials ul li {
+    list-style-type: none;
+}
+
+.Hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec .newinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 30px;
+    margin-top: 5px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 3rem;
+    box-shadow: 0 3.48px 13.052px #0000000d;
+}
+
+#sec .newinfo h3 {
+    color: #202124;
+    max-width: 500px;
+}
+
+#sec .newinfo p {
+    text-align: left;
+    color: #1f1f1f;
+}
+
+#sec .nextinfo {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #000;
+}
+
+#sec .nextinfo h3,
+#sec .nextinfo p {
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.deep-section {
+    padding: 100px 0 50px;
+}
+
+.deep-section h1 {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.grid-images .grid-card {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+}
+
+.grid-images .grid-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.grid-images .grid-card .heading {
+    padding: 3rem 0 2rem;
+    max-width: 200px;
+}
+
+.card-1 {
+    background: #FF564C;
+    color: #ffff;
+}
+
+.card-2 {
+    background: #E8F0FE;
+    color: #000;
+}
+
+.card-3 {
+    background: #f1f1f1;
+    color: #000;
+}
+
+.card-4 {
+    background: #7021D5;
+    color: #fff;
+}
+
+.card-5 {
+    background: #1A73E8;
+    color: #fff;
+}
+
+.card-6 {
+    background: #E8F0FE;
+    color: #000;
+}
+
+.merchand .merchand-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.merchand .merchand-cards .mech-1 {
+    display: flex;
+    border-radius: 1.2rem;
+    padding: 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+.merchand-cards>a:nth-child(1) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(2) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(3) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(4) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(5) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(6) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(7) {
+    background: #D3E3FD;
+}
+
+.merchand-cards>a:nth-child(8) {
+    background: #D3E3FD;
+}
